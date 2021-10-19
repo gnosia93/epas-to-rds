@@ -1,6 +1,3 @@
-data "aws_vpc" "tf_vpc" {
-    default = true
-}
 
 /*
 data "aws_iam_policy" "ec2_service_policy" {
@@ -187,9 +184,9 @@ resource "aws_security_group" "tf_sg_pub" {
     },
     {
       cidr_blocks = [ var.your_ip_addr, data.aws_vpc.tf_vpc.cidr_block ]
-      description = "oracle"
-      from_port = 1521
-      to_port = 1521
+      description = "ppas"
+      from_port = 5444
+      to_port = 5444
       ipv6_cidr_blocks = [ ]
       prefix_list_ids = [ "pl-e1a54088" ]
       protocol = "tcp"

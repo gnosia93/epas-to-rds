@@ -82,15 +82,70 @@ _DATA
 }
 
 
+# rds setup
+resource "aws_db_subnet_group" "tf_db_subnet_grp" {
+  name       = "tf-db-subnet-grp"
+  subnet_ids = data.aws_subnet_ids.tf_subnet_ids.ids
+
+  tags = {
+    Name = "tf-db-subnet-grp"
+  }
+}
+
+resource "aws_db_parameter_group" "tf-db-parameter-grp" {
+  name   = "pg-postgres-rds"
+  family = "postgres13"
+
+/*
+  parameter {
+    name  = "character_set_server"
+    value = "utf8"
+  }
+
+  parameter {
+    name  = "character_set_client"
+    value = "utf8"
+  }
+*/
+}
+
+
+
+resource "aws_db_instance" "tf_postgres_rds" {
+  identifier             = "tf-postgres-rds"
+  instance_class         = "db.m6g.4xlarge"
+  allocated_storage      = 5
+  engine                 = "postgres"
+  engine_version         = "13.4"
+  username               = "postgres"
+  password               = "postgres"
+  db_subnet_group_name   = aws_db_subnet_group.tf_db_subnet_grp.name
+  vpc_security_group_ids = [aws_security_group.tf_sg_pub.id]
+  parameter_group_name   = aws_db_parameter_group.tf-db-parameter-grp.name
+  publicly_accessible    = true
+  skip_final_snapshot    = true
+}
+
+
+
+
+
+
+
+
+
+
 
 
 #
 # Output Section
 #
+output "tf_ppas_13_public_dns" {
+    value = aws_instance.tf_ppas_13.public_dns
+}
 
-
-output "tf_ppas_13_public_ip" {
-    value = aws_instance.tf_ppas_13.public_ip
+output "tf_postgres_rds_endpoint" {
+    value = aws_db_instance.tf_postgres_rds.endpoint
 }
 
 
