@@ -1,3 +1,7 @@
+data "aws_availability_zones" "azlist" {
+    state = "available"
+}
+
 data "aws_vpc" "tf_vpc" {
     default = true
 }
@@ -6,3 +10,8 @@ data "aws_vpc" "tf_vpc" {
 data "aws_subnet_ids" "tf_subnet_ids" {
   vpc_id = data.aws_vpc.tf_vpc.id
 }
+
+output "azlist" {
+    value = data.aws_availability_zones.azlist.names[0]
+}
+
