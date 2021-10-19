@@ -56,3 +56,9 @@ Oct 19 10:55:19 ip-172-31-13-123 systemd[1]: Starting EPAS Cluster 13-main...
 Oct 19 10:55:21 ip-172-31-13-123 systemd[1]: Started EPAS Cluster 13-main.
 root@ip-172-31-13-123:~# systemctl restart edb-as@13-main
 ```
+
+
+
+* edb-as listen port 5444 
+
+시큐리티 그룹 수정해야 함.
