@@ -1,10 +1,4 @@
 
-/*
-data "aws_iam_policy" "ec2_service_policy" {
-  arn = "arn:aws:iam::aws:policy/AmazonEC2FullAccess"
-}
-*/
-
 resource "aws_key_pair" "tf_key" {
   key_name = "tf_key"
   public_key = file("~/.ssh/tf_key.pub")
