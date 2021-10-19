@@ -1,5 +1,6 @@
 # ppas-to-rds
 
+* https://www.enterprisedb.com/edb-docs/static/docs/epas/12/EDB_Postgres_Advanced_Server_Installation_Guide_Linux_v12.pdf
 
 * postgresql DB생성 및 접속 시 Peer authentication에러 발생 시 해야할 것
 
