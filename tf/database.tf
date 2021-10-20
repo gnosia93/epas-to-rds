@@ -72,7 +72,24 @@ resource "aws_instance" "tf_ppas_13" {
     vpc_security_group_ids = [ aws_security_group.tf_sg_pub.id ]
     user_data = <<_DATA
 #! /bin/bash
+# Setup the EDB repository
 
+sudo su -c 'echo "deb [arch=amd64] https://apt.enterprisedb.com/$(lsb_release -cs)-edb/ $(lsb_release -cs) main" > /etc/apt/sources.list.d/edb-$(lsb_release -cs).list'
+
+# Replace '<USERNAME>' and '<PASSWORD>' below with your username and password for the EDB repositories. Visit https://www.enterprisedb.com/user to get your username and password
+sudo su -c 'echo "machine apt.enterprisedb.com login ${var.edb_username} password ${var.edb_password}" > /etc/apt/auth.conf.d/edb.conf'
+
+# Add support for secure APT repositories
+sudo apt-get -y install apt-transport-https
+
+# Add the EDB signing key
+sudo wget -q -O - https://apt.enterprisedb.com/edb-deb.gpg.key  | sudo apt-key add -
+
+# Update the repository meta data
+sudo apt-get update
+
+# Install selected packages
+sudo apt-get -y install edb-as13-server 
 _DATA
     
     tags = {

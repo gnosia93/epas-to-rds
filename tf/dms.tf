@@ -19,7 +19,7 @@ resource "aws_dms_replication_instance" "tf_dms_ppas" {
     engine_version = "3.4.3"
     multi_az = false
     publicly_accessible = true
-    replication_instance_class = "dms.c5.xlarge"
+    replication_instance_class = "dms.c5.2xlarge"
     replication_instance_id = "tf-dms-ppas"
 
     depends_on = [time_sleep.wait_10_seconds]
@@ -44,7 +44,7 @@ resource "aws_dms_endpoint" "tf_dms_ep_rds" {
     endpoint_id = "tf-dms-ep-rds"
     endpoint_type = "target"
     engine_name = "postgres"
-    server_name = aws_instance.tf_ppas_13.public_dns          ## rds (required)
+    server_name = aws_db_instance.tf_postgres_rds.address          ## rds (required)
     database_name = "shop_db"                                      ## database name
     username = "shop"
     password = "shop"
