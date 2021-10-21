@@ -5,6 +5,7 @@
 
 << 아키텍처 다이어그램 >>
 
+* [PC 환경 설정]()
 
 * [인프라 빌드하기](https://github.com/gnosia93/epas-to-rds/blob/main/1.infra-build.md)
 
