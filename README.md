@@ -5,15 +5,15 @@
 
 << 아키텍처 다이어그램 >>
 
-* [PC 환경 설정]()
+* [PC 환경 설정](https://github.com/gnosia93/epas-to-rds/blob/main/1.local-pc.md)
 
-* [인프라 빌드하기](https://github.com/gnosia93/epas-to-rds/blob/main/1.infra-build.md)
+* [인프라 빌드하기](https://github.com/gnosia93/epas-to-rds/blob/main/2.infra-build.md)
 
-* [소스 데이터베이스 설정](https://github.com/gnosia93/epas-to-rds/blob/main/2.srcdb-config.md)
+* [소스 데이터베이스 설정](https://github.com/gnosia93/epas-to-rds/blob/main/3.srcdb-config.md)
 
-* [DMS 리플리케이션 설정](https://github.com/gnosia93/epas-to-rds/blob/main/3.repl-task.md)
+* [DMS 리플리케이션 설정](https://github.com/gnosia93/epas-to-rds/blob/main/4.repl-task.md)
 
-* [동기화 테스트]
+* [스키마 생성 및 데이터 생성]
 
 
 ## Revision History ##
