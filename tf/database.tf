@@ -92,6 +92,7 @@ sudo apt-get -y install edb-as13-server
 
 sudo -u enterprisedb sed -i -e "/is for Unix domain socket connections only/a\local   all             all                        md5" /etc/edb-as/13/main/pg_hba.conf
 sudo -u enterprisedb echo "host    all             all             0.0.0.0/0               md5" >> /etc/edb-as/13/main/pg_hba.conf
+sudo systemctl restart edb-as@13-main
 _DATA
     
     tags = {
