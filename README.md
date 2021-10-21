@@ -1,17 +1,6 @@
 # EDB Postgres Advanced Server to Amazon RDS
 
 
-#### PostgreSQL 소스 데이터베이스 설정 ####
-
-* https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.PostgreSQL.html
-
-#### logical replication ####
-
-* https://medium.com/@ramesh.esl/change-data-capture-cdc-in-postgresql-7dee2d467d1b
-  
-#### logical replication plugin ####  
-* [pglogical 2.4.0](https://www.postgresql.org/about/news/pglogical-240-now-available-2284/)
-* [test_decoding](https://www.enterprisedb.com/edb-docs/d/postgresql/reference/manual/11.7/test-decoding.html)
 
 
 
