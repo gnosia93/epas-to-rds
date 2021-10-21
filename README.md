@@ -15,17 +15,7 @@
 
 
 
-### 참고자료 ###
 
-* [Postgres Advanced Server 설치](https://www.enterprisedb.com/edb-docs/static/docs/epas/12/EDB_Postgres_Advanced_Server_Installation_Guide_Linux_v12.pdf)
-
-* [postgresql DB생성 및 접속 시 Peer authentication에러](https://zipeya.tistory.com/entry/postgresql-DB%EC%83%9D%EC%84%B1-%EB%B0%8F-%EC%A0%91%EC%86%8D-%EC%8B%9C-Peer-authentication%EC%97%90%EB%9F%AC-%EB%B0%9C%EC%83%9D-%EC%8B%9C-%ED%95%B4%EC%95%BC%ED%95%A0-%EA%B2%83)
-```
-enterprisedb@ip-172-31-13-123:/etc/edb-as/13/main$ vi pg_hba.conf
-
-local   all             all                                     md5      <--- 추가
-host    all             all             0.0.0.0/0               md5      <--- 추가
-```
 
 
 * 데이터베이스 재기동
