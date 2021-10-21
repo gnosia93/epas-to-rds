@@ -13,6 +13,8 @@
 
   * [DMS 리플리케이션 설정](https://github.com/gnosia93/epas-to-rds/blob/main/4.repl-task.md)
 
+  * [스키마 생성하기](https://github.com/gnosia93/epas-to-rds/blob/main/5.schema-create.md)
+
   * [동기화 테스트하기]()
 
 
