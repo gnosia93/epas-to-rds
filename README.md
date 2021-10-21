@@ -2,6 +2,7 @@
 
 이 블로그에서는 EDB Postgres Advanced Server 와 아마존 RDS Postgres 서비스간의 크로스 데이터 동기화 기법에 대해 설명합니다.
 
+#### WORKSHOP. ####
 
 << 아키텍처 다이어그램 >>
 
@@ -17,7 +18,7 @@
 
   * [동기화 테스트하기]()
 
-#### Appendix ####
+#### APPENDIX. ####
 
   * [트러블 슈팅]()
 
