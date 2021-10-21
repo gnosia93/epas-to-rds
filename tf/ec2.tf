@@ -25,7 +25,7 @@ sudo -u ec2-user git clone https://github.com/gnosia93/ppas-to-rds-pypostgres.gi
 #sudo -u ec2-user mkdir -p /home/ec2-user/pypostgres/images
 #sudo -u ec2-user curl -o /home/ec2-user/pypostgres/images/images.tar http://www.studydev.com/images.tar
 #sudo -u ec2-user tar xvf /home/ec2-user/pypostgres/images/images.tar -C /home/ec2-user/pypostgres/images
-sudo pip install psycopg2-binary
+sudo pip3 install psycopg2-binary
 sudo amazon-linux-extras install postgresql10 epel -y
 _DATA
 
