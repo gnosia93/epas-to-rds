@@ -5,6 +5,11 @@
 
   https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.PostgreSQL.html
 
+* logical replicatin
+
+  https://medium.com/@ramesh.esl/change-data-capture-cdc-in-postgresql-7dee2d467d1b
+
+
 
 
 
