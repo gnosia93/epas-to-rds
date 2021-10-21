@@ -134,7 +134,8 @@ resource "aws_db_parameter_group" "tf-db-parameter-grp" {
 resource "aws_db_instance" "tf_postgres_rds" {
   identifier             = "tf-postgres-rds"
   instance_class         = "db.m6g.4xlarge"
-  allocated_storage      = 5
+  allocated_storage      = 50
+  max_allocated_storage  = 300
   engine                 = "postgres"
   engine_version         = "13.4"
   username               = "postgres"
