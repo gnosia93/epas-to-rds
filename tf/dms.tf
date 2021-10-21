@@ -13,7 +13,7 @@ resource "time_sleep" "wait_10_seconds" {
 # DMS를 위한 서브넷의 경우 설정하지 않더라도 default 라는 이름의 서브넷 그룹을 자동으로 생성해 준다. 
 #
 
-resource "aws_dms_replication_instance" "tf_dms_ppas" {
+resource "aws_dms_replication_instance" "tf_dms_epas" {
     allocated_storage = 50
     apply_immediately = true
     engine_version = "3.4.3"
@@ -27,7 +27,7 @@ resource "aws_dms_replication_instance" "tf_dms_ppas" {
 
 
 
-resource "aws_dms_endpoint" "tf_dms_ep_ppas" {
+resource "aws_dms_endpoint" "tf_dms_ep_epas" {
     endpoint_id = "tf-dms-ep-ppas"
     endpoint_type = "source"
     engine_name = "postgres"
