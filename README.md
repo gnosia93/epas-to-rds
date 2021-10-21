@@ -10,5 +10,6 @@
 
 * [소스 데이터베이스 설정](https://github.com/gnosia93/epas-to-rds/blob/main/2.srcdb-config.md)
 
+* [DMS 리플리케이션 설정](https://github.com/gnosia93/epas-to-rds/blob/main/3.repl-task.md)
 
-
+* [동기화 테스트]
