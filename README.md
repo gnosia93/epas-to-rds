@@ -1,4 +1,4 @@
-# EDB Postgres to Amazon RDS for Postgres
+# EDB Postgres Advanced Server to Amazon RDS
 
 
 
