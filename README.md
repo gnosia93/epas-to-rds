@@ -1,6 +1,6 @@
 # EPAS to Amazon RDS
 
-이 블로그에서는 EDB Postgres Advanced Server 와 아마존 RDS Postgres 서비스간의 크로스 데이터 동기화 기법에 대해 설명합니다.
+이 블로그에서는 EDB Postgres Advanced Server 와 아마존 RDS Postgres 서비스간의 크로스 DB 동기화 방안에 대해 설명합니다.
 
 << 아키텍처 다이어그램 >>
 
