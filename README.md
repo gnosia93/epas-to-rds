@@ -1,10 +1,13 @@
 # ppas-to-rds
 
-* https://www.enterprisedb.com/edb-docs/static/docs/epas/12/EDB_Postgres_Advanced_Server_Installation_Guide_Linux_v12.pdf
 
-* postgresql DB생성 및 접속 시 Peer authentication에러 발생 시 해야할 것
 
-     https://zipeya.tistory.com/entry/postgresql-DB%EC%83%9D%EC%84%B1-%EB%B0%8F-%EC%A0%91%EC%86%8D-%EC%8B%9C-Peer-authentication%EC%97%90%EB%9F%AC-%EB%B0%9C%EC%83%9D-%EC%8B%9C-%ED%95%B4%EC%95%BC%ED%95%A0-%EA%B2%83
+
+## 참고자료 ##
+
+* [Postgres Advanced Server 설치](https://www.enterprisedb.com/edb-docs/static/docs/epas/12/EDB_Postgres_Advanced_Server_Installation_Guide_Linux_v12.pdf)
+
+* [postgresql DB생성 및 접속 시 Peer authentication에러](https://zipeya.tistory.com/entry/postgresql-DB%EC%83%9D%EC%84%B1-%EB%B0%8F-%EC%A0%91%EC%86%8D-%EC%8B%9C-Peer-authentication%EC%97%90%EB%9F%AC-%EB%B0%9C%EC%83%9D-%EC%8B%9C-%ED%95%B4%EC%95%BC%ED%95%A0-%EA%B2%83)
 
 
 ```
@@ -59,6 +62,6 @@ root@ip-172-31-13-123:~# systemctl restart edb-as@13-main
 
 
 
-* edb-as listen port 5444 
+
 
 시큐리티 그룹 수정해야 함.
