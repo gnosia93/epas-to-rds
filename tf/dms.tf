@@ -16,7 +16,7 @@ resource "time_sleep" "wait_10_seconds" {
 resource "aws_dms_replication_instance" "tf_dms_epas" {
     allocated_storage = 50
     apply_immediately = true
-    engine_version = "3.4.3"
+    engine_version = "3.4.5"
     multi_az = false
     publicly_accessible = true
     replication_instance_class = "dms.c5.2xlarge"
