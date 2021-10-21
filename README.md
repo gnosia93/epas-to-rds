@@ -6,6 +6,9 @@
 
 
 
+* [인프라 빌드하기](https://github.com/gnosia93/epas-to-rds/blob/main/1.infra-build.md)
+
+* [소스 데이터베이스 설정](https://github.com/gnosia93/epas-to-rds/blob/main/2.srcdb-config.md)
 
 
 
