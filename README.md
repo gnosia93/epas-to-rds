@@ -43,8 +43,3 @@ Oct 19 10:55:21 ip-172-31-13-123 systemd[1]: Started EPAS Cluster 13-main.
 root@ip-172-31-13-123:~# systemctl restart edb-as@13-main
 ```
 
-
-
-
-
-시큐리티 그룹 수정해야 함.
