@@ -14,7 +14,8 @@
 
   * [스키마 생성하기](https://github.com/gnosia93/epas-to-rds/blob/main/5.schema-create.md)
 
-  * [동기화 테스트하기]()
+  * [동기화 테스트하기](https://github.com/gnosia93/epas-to-rds/blob/main/6.sync-test.md)
+
 
 #### _Appendix._ ####
 
