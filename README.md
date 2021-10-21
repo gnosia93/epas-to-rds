@@ -1,9 +1,9 @@
 # EPAS to Amazon RDS
 
-이 블로그에서는 EDB Postgres Advanced Server 의 일부 데이터를 아마존 RDS Postgres 서비스르 동기화 하는 방법을 다룹니다.
+이 블로그에서는 EDB Postgres Advanced Server 와 아마존 RDS Postgres 서비스간의 단방향 테이브 동기화 기법에 대해 기술합니다.
 
 
-
+<< 아키텍처 다이어그램 >>
 
 
 * [인프라 빌드하기](https://github.com/gnosia93/epas-to-rds/blob/main/1.infra-build.md)
