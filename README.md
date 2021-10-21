@@ -1,4 +1,4 @@
-# ppas-to-rds
+# EDB Postgres to Amazon RDS for Postgres
 
 
 
