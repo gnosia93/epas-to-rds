@@ -73,7 +73,6 @@ resource "aws_instance" "tf_ppas_13" {
     user_data = <<_DATA
 #! /bin/bash
 # Setup the EDB repository
-
 sudo su -c 'echo "deb [arch=amd64] https://apt.enterprisedb.com/$(lsb_release -cs)-edb/ $(lsb_release -cs) main" > /etc/apt/sources.list.d/edb-$(lsb_release -cs).list'
 
 # Replace '<USERNAME>' and '<PASSWORD>' below with your username and password for the EDB repositories. Visit https://www.enterprisedb.com/user to get your username and password
